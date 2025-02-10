@@ -6,6 +6,9 @@
     <p><strong>Category:</strong> {{ post.category }}</p>
     <p><strong>Published on:</strong> {{ post.date }}</p>
     <a href="{{ url_for('post_detail', post_id=post.id) }}">View More</a>
+    <title>HOI4 guide</title>
+    <link rel="icon" href="{{ url_for('static', filename='photos/favicon.png') }}">
+
 {% endfor %}
 
   <div class="margin-for-text">
