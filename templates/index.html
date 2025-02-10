@@ -16,7 +16,7 @@
     <article class="flex-container border">
       <div>
         <h3>The beginning</h3>
-        <img src="photos/win.jpg" width="318" height="182" />
+        <img src="{{ url_for('static', filename='photos/win.jpg') }}" width="318" height="182" />
       </div>
       <div>
         <p class="margin-for-text">
@@ -66,7 +66,7 @@
         </p>
       </div>
       <div>
-        <img src="photos/fall.webp" width="318" height="182" />
+        <img src="{{ url_for('static', filename='photos/fall.webp') }}" width="318" height="182" />
         <ul class="circle-border ul2">
           <li>Tanks</li>
           <li>Airplanes</li>
@@ -79,7 +79,7 @@
     <article class="flex-container border">
       <div>
         <h3>Intelligence</h3>
-        <img src="photos/agency.jpg" width="318" height="182" />
+        <img src="{{ url_for('static', filename='photos/agency.jpg') }}" width="318" height="182" />
       </div>
       <div>
         <p class="margin-for-text">
@@ -109,13 +109,13 @@
         </p>
       </div>
       <div>
-        <img src="photos/meeting.jpg" width="318" height="182" />
-        <img src="photos/meeting2.jpeg" width="318" height="182" />
+        <img src="{{ url_for('static', filename='photos/meeting.jpg') }}" width="318" height="182" />
+        <img src="{{ url_for('static', filename='photos/meeting2.jpg') }}" width="318" height="182" />
       </div>
     </article>
     <br />
     <article class="border">
-      <img src="photos/Queen!.png" class="Queen" />
+      <img src="{{ url_for('static', filename='photos/Queen!.png') }}" class="Queen" />
       <h1 class="margin-for-text center">For the Queen and Hive!</h1>
     </article>
     <br />
