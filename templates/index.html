@@ -1,0 +1,133 @@
+{% include 'navbar.html' %}
+<h1>Blog Posts</h1>
+{% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+    <p><strong>Category:</strong> {{ post.category }}</p>
+    <p><strong>Published on:</strong> {{ post.date }}</p>
+    <a href="{{ url_for('post_detail', post_id=post.id) }}">View More</a>
+{% endfor %}
+
+  <div class="margin-for-text">
+    <strong>
+      <h1>Welcome to Equestria At War</h1>
+      <h2>One of the funniest mod in the community</h2>
+    </strong>
+    <article class="flex-container border">
+      <div>
+        <h3>The beginning</h3>
+        <img src="photos/win.jpg" width="318" height="182" />
+      </div>
+      <div>
+        <p class="margin-for-text">
+          Before you planning to attack this birds, you have to capture thw
+          whole continent were you belong. Only after that you can prepare for
+          a new war for the glory of the queen!
+        </p>
+        <ul>
+          <li>Conquer the Kingdom of Deers</li>
+          <li>Take gold mines from the Bears</li>
+          <li>Make blitzkrieg to communists in the East</li>
+          <li>Complete the development of nuclear weapons</li>
+          <li>Win in the Great War</li>
+        </ul>
+        <p class="margin-for-text">
+          Only after that you can thinks about other continents. So if you
+          don't comply with the requirements, curb your appetite.
+        </p>
+      </div>
+    </article>
+    <br />
+    <article class="flex-container border">
+      <div>
+        <h3 class="margin-for-text">Army</h3>
+        <p class="margin-for-text">
+          All changelings possess unique shape-shifting magic. It enables them
+          to shift form, voice, and even size with stunning rapidity and
+          accuracy. They use this ability to fool their victims and drain
+          their love, which is essential for their survival. Don't let them
+          hug you.
+        </p>
+        <p class="margin-for-text">
+          Also you don't have to forget about rearmament of the army. New gun
+          is a new argument in the debates with the enemies. If you weapon is
+          bigger, than your arguments will be louder.
+        </p>
+        <p class="margin-for-text">
+          New tanks are better than old, but sometimes it's better to use
+          older ones. Why? Ansew is simple: older tanks are cost less and they
+          are more reliable because they don't have many equipment.
+        </p>
+        <p class="margin-for-text">
+          New airplanes. Do not econom in the air defence! After Great War
+          almost all countries will have nuclear weapon. Don't give them a
+          chance to take air superiority if you don't want atomic bomb in you
+          home. Also 9k is the death for the economic
+        </p>
+      </div>
+      <div>
+        <img src="photos/fall.webp" width="318" height="182" />
+        <ul class="circle-border ul2">
+          <li>Tanks</li>
+          <li>Airplanes</li>
+          <li>Artillery</li>
+          <li>Ponyresources</li>
+        </ul>
+      </div>
+    </article>
+    <br />
+    <article class="flex-container border">
+      <div>
+        <h3>Intelligence</h3>
+        <img src="photos/agency.jpg" width="318" height="182" />
+      </div>
+      <div>
+        <p class="margin-for-text">
+          Espionage. There are 4 deployment sites: civilian government, army,
+          navy and air force. For each implementation, the effects and bonuses
+          are the same, with the exception of bonus effects that are possible
+          with a successful outcome of the operation. When infiltrated into
+          the administration, agents will try to get into the government by
+          providing you with information about civil affairs in the country.
+          When implemented in the Army, Navy and Air Force, the data will be
+          on these sections of espionage, respectively. A bonus outcome could
+          be gaining experience from one of the types of troops or political
+          power.
+        </p>
+        <p class="margin-for-text">
+          Counterintelligence is used to disrupt the work of enemy agents. The
+          higher this value, the more likely it is that you will be able to
+          stop other people's agents, and the more time and money it will take
+          to carry out an operation against you. Just like any other methods
+          of reconnaissance, they are carried out with the help of agents. For
+          counterintelligence, one agent is enough to carry out the task while
+          in your or an allied country.
+        </p>
+        <p class="margin-for-text">
+          And don't forget: New enemies intelligence saves your soldiers from
+          death and gives them new appartunities to live in piece after war.
+        </p>
+      </div>
+      <div>
+        <img src="photos/meeting.jpg" width="318" height="182" />
+        <img src="photos/meeting2.jpeg" width="318" height="182" />
+      </div>
+    </article>
+    <br />
+    <article class="border">
+      <img src="photos/Queen!.png" class="Queen" />
+      <h1 class="margin-for-text center">For the Queen and Hive!</h1>
+    </article>
+    <br />
+    <article>
+      <footer>
+        <p>
+          Author: Idjid Shmidt(Erlan Bakirov)<br />
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJQwDCVRFMwqlNCGvQPnvvLTgVGjprmzZNCfPgkCJRPhQHwvDkSHjVsVScLnrHPtdhFg"
+            >erlanshka@gmail.com</a
+          >
+        </p>
+      </footer>
+    </article>
+  </div>

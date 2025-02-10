@@ -1,0 +1,26 @@
+<nav>
+    <article class="blue">
+        <strong>
+          <h1>A Guide to Conquering the Continent of Griffonia</h1>
+          <em>For Dummieses :D</em>
+        </strong>
+    </article>
+    <ul class="flex-container dark-blue babushka ul1">
+        <li>
+            <a href="{{ url_for('index') }}" class="dark-blue separator">Home (Equus)</a>
+        </li>
+        <li>
+            <a href="{{ url_for('add_post') }}" class="dark-blue separator">About Griffonia</a> 
+        </li>
+        <li>
+            <a href="{{ url_for('filter_by_category') }}" class="dark-blue separator">War experience</a>
+        </li>
+        <li>
+            <a href="#" class="dark-blue separator">Diplomacy</a>
+        </li>
+        <li>
+            <a href="#" class="dark-blue separator">Military contracts</a>
+        </li>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </ul>
+</nav>
